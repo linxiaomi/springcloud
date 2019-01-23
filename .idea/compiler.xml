@@ -9,6 +9,8 @@
         <module name="springcloud-api" />
         <module name="springcloud-consumer-dept-80" />
         <module name="springcloud-eureka-7001" />
+        <module name="springcloud-eureka-7002" />
+        <module name="springcloud-eureka-7003" />
         <module name="springcloud-provider-dept-8001" />
       </profile>
     </annotationProcessing>
@@ -17,6 +19,8 @@
       <module name="springcloud-api" target="1.8" />
       <module name="springcloud-consumer-dept-80" target="1.8" />
       <module name="springcloud-eureka-7001" target="1.8" />
+      <module name="springcloud-eureka-7002" target="1.8" />
+      <module name="springcloud-eureka-7003" target="1.8" />
       <module name="springcloud-provider-dept-8001" target="1.8" />
     </bytecodeTargetLevel>
   </component>
