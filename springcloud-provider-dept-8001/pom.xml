@@ -56,5 +56,11 @@
             <artifactId>spring-cloud-starter-config</artifactId>
             <version>1.4.5.RELEASE</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-actuator -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+            <version>1.4.6.RELEASE</version>
+        </dependency>
     </dependencies>
 </project>
