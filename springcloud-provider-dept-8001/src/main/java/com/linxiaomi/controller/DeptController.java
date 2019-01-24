@@ -54,7 +54,6 @@ public class DeptController {
 
     /**
      * @Description:    查询所有部门信息
-     * @Param:
      * @Author:         linxiaomi
      * @CreateDate:     2019/1/23 15:32
      * @UpdateUser:     linxiaomi
