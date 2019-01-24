@@ -1,6 +1,7 @@
 package com.linxiaomi.dao;
 
 import com.linxiaomi.entity.Dept;
+import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;
 
@@ -11,6 +12,7 @@ import java.util.List;
  * @UpdateDate: 2019/1/24 10:51
  * @Version: 1.0
  **/
+@Mapper
 public interface DeptDao {
 
     boolean addDept(Dept dept);
