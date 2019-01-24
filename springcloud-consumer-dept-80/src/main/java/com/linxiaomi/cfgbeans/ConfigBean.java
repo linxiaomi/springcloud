@@ -1,5 +1,6 @@
 package com.linxiaomi.cfgbeans;
 
+import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.client.RestTemplate;
@@ -25,11 +26,12 @@ public class ConfigBean {
      * @Author:         linxiaomi
      * @CreateDate:     2019/1/23 16:04
      * @UpdateUser:     linxiaomi
-     * @UpdateDate:     2019/1/23 16:04
-     * @UpdateRemark:   
+     * @UpdateDate:     2019/1/24 10:12
+     * @UpdateRemark:   增加@LoadBalanced注解
      * @Version:        1.0
      * @return:         
      */
+    @LoadBalanced
     @Bean
     public RestTemplate getRestTemplate() {
         return new RestTemplate();
