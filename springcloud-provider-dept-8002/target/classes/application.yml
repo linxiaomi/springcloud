@@ -31,5 +31,5 @@ eureka:
 info:
   app.name: linxiaomi-springcloud
   company.name: https://github.com/linxiaomi
-  build.artifactId: $project.artifactId$
-  build.version: $project.version$
+  build.artifactId: springcloud-provider-dept-8002
+  build.version: 1.0-SNAPSHOT

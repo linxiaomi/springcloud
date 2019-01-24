@@ -4,6 +4,7 @@ import com.linxiaomi.service.DeptService;
 import com.linxiaomi.dao.DeptDao;
 import com.linxiaomi.entity.Dept;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
@@ -14,6 +15,7 @@ import java.util.List;
  * @UpdateDate: 2019/1/24 10:57
  * @Version: 1.0
  **/
+@Service
 public class DeptServiceImpl implements DeptService {
 
     @Autowired
