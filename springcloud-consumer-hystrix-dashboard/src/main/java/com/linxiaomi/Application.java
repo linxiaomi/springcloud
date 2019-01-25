@@ -6,7 +6,7 @@ import org.springframework.cloud.netflix.hystrix.dashboard.EnableHystrixDashboar
 
 /**
  * @Description:
- * @Author: admin
+ * @Author: linxiaomi
  * @CreateDate: 2019/1/25 16:00
  * @UpdateDate: 2019/1/25 16:00
  * @Version: 1.0
