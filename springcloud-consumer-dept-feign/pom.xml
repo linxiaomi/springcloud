@@ -12,6 +12,11 @@
     <artifactId>springcloud-consumer-dept-feign</artifactId>
 
     <dependencies>
+        <dependency>
+            <groupId>com.linxiaomi</groupId>
+            <artifactId>springcloud-api</artifactId>
+            <version>${project.version}</version>
+        </dependency>
         <!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-feign -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
