@@ -16,6 +16,9 @@ info:
   build.artifactId: $project.artifactId$
   build.version: $project.version$
 zuul:
+#  ignored-services: springcloud-dept
+#  ignored-services: "*"
+#  prefix: /linxiaomi
   routes:
     mydept.serviceId: springcloud-dept
     mydept.path: /mydept/**
