@@ -1,2 +1,4 @@
-com\linxiaomi\service\DeptClientService.class
+com\linxiaomi\service\DeptClientServiceFallbackFactory$1.class
 com\linxiaomi\entity\Dept.class
+com\linxiaomi\service\DeptClientService.class
+com\linxiaomi\service\DeptClientServiceFallbackFactory.class

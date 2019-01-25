@@ -1,2 +1,3 @@
 D:\software\microservice\springcloud\springcloud-api\src\main\java\com\linxiaomi\service\DeptClientService.java
+D:\software\microservice\springcloud\springcloud-api\src\main\java\com\linxiaomi\service\DeptClientServiceFallbackFactory.java
 D:\software\microservice\springcloud\springcloud-api\src\main\java\com\linxiaomi\entity\Dept.java
