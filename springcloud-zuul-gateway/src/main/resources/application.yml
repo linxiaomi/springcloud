@@ -15,3 +15,7 @@ info:
   company.name: https://github.com/linxiaomi
   build.artifactId: $project.artifactId$
   build.version: $project.version$
+zuul:
+  routes:
+    mydept.serviceId: springcloud-dept
+    mydept.path: /mydept/**

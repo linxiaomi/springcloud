@@ -15,3 +15,9 @@ info:
   company.name: https://github.com/linxiaomi
   build.artifactId: springcloud-zuul-gateway
   build.version: 1.0-SNAPSHOT
+zuul:
+#  prefix: /linxiaomi
+#  ignored-services: "*"
+  routes:
+    mydept.serviceId: springcloud-dept
+    mydept.path: /mydept/**
