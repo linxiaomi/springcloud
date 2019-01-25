@@ -17,6 +17,7 @@
         <module name="springcloud-provider-dept-8002" />
         <module name="springcloud-provider-dept-8003" />
         <module name="springcloud-provider-dept-hystrix-8001" />
+        <module name="springcloud-zuul-gateway" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -32,6 +33,7 @@
       <module name="springcloud-provider-dept-8002" target="1.8" />
       <module name="springcloud-provider-dept-8003" target="1.8" />
       <module name="springcloud-provider-dept-hystrix-8001" target="1.8" />
+      <module name="springcloud-zuul-gateway" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
