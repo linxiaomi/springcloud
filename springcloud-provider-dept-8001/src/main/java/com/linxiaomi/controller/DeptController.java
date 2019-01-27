@@ -3,8 +3,11 @@ package com.linxiaomi.controller;
 import com.linxiaomi.entity.Dept;
 import com.linxiaomi.service.DeptService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cloud.client.ServiceInstance;
+import org.springframework.cloud.client.discovery.DiscoveryClient;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -19,6 +22,9 @@ public class DeptController {
 
     @Autowired
     DeptService deptService;
+
+    @Autowired
+    DiscoveryClient discoveryClient;
 
     /**
      * @Description:    增加部门信息
@@ -65,5 +71,27 @@ public class DeptController {
     @RequestMapping(value = "/dept/list", method = RequestMethod.GET)
     public List<Dept> list() {
         return deptService.list();
+    }
+
+    /**
+     * @Description:    服务发现
+     * @wiki:
+     * @Author:         linxiaomi
+     * @CreateDate:     2019/1/27 15:22
+     * @UpdateUser:     linxiaomi
+     * @UpdateDate:     2019/1/27 15:22
+     * @UpdateRemark:
+     * @Version:        1.0
+     * @return:
+     */
+    @RequestMapping(value = "/dept/discovery", method = RequestMethod.GET)
+    public Object discovery() {
+        List<String> list = new ArrayList<>();
+        // SPRINGCLOUD-DEPT必须为大写
+        List<ServiceInstance> serviceInstanceList = discoveryClient.getInstances("SPRINGCLOUD-DEPT");
+        for (ServiceInstance serviceInstance : serviceInstanceList) {
+            System.out.println(serviceInstance.getServiceId() + "\t" + serviceInstance.getHost() + "\t" + serviceInstance.getPort() + "\t" + serviceInstance.getUri());
+        }
+        return discoveryClient;
     }
 }
