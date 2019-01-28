@@ -1,4 +1,4 @@
-package com.zhlinxiaomi.config;
+package config;
 
 import com.netflix.loadbalancer.IRule;
 //import com.netflix.loadbalancer.RetryRule;

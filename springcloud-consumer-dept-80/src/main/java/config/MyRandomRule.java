@@ -1,4 +1,4 @@
-package com.zhlinxiaomi.config;
+package config;
 
 import com.netflix.client.config.IClientConfig;
 import com.netflix.loadbalancer.AbstractLoadBalancerRule;
@@ -9,6 +9,7 @@ import java.util.List;
 import java.util.concurrent.ThreadLocalRandom;
 
 /**
+ * 此类为源码改动 源码位置：https://github.com/Netflix/ribbon/blob/master/ribbon-loadbalancer/src/main/java/com/netflix/loadbalancer/RandomRule.java
  * @Description: 自定义负载均衡策略
  * @Author: linxiaomi
  * @CreateDate: 2019/1/27 17:48
