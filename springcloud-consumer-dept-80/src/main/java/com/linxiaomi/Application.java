@@ -15,7 +15,8 @@ import org.springframework.cloud.netflix.ribbon.RibbonClient;
  **/
 @SpringBootApplication
 @EnableEurekaClient
-@RibbonClient(name = "SPRINGCLOUD-DEPT", configuration = MyRule.class)
+//@RibbonClient(name = "SPRINGCLOUD-DEPT", configuration = MyRule.class)
+@RibbonClient(name = "springcloud-dept", configuration = MyRule.class)
 public class Application {
 
     public static void main(String[] args) {

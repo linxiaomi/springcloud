@@ -26,7 +26,7 @@ public class MyRule {
      * @return:
      */
     @Bean
-    public IRule myRule() {
+    public IRule myRules() {
         return new MyRandomRule();
         // 达到的目的,用我们重新选择的随机算法代替默认的轮询
 //        return new RandomRule();
