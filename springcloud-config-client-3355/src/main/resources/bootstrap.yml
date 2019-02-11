@@ -1,7 +1,7 @@
 spring:
   cloud:
     config:
-      name: springcloud-config-client
+      name: springcloud-config-client      # 需要从GitHub上读取的资源名称，注意没有yml后缀名
       profile: dev
       label: master
       uri: http://config-3344.com:3344

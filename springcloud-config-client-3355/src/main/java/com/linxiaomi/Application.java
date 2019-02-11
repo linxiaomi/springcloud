@@ -5,7 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
  * @Description:
- * @Author: admin
+ * @Author: linxiaomi
  * @CreateDate: 2019/2/4 17:10
  * @UpdateDate: 2019/2/4 17:10
  * @Version: 1.0
